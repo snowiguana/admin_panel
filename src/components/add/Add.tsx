@@ -14,7 +14,6 @@ const Add = (props: Props) => {
     //add new item
   };
 
-  console.log("here");
   return (
     <div className="add">
       <div className="modal">
@@ -22,7 +21,6 @@ const Add = (props: Props) => {
           X
         </span>
         <h1>Add new {props.slug}</h1>
-
         <form onSubmit={handleSubmit}>
           {props.columns
             .filter((item) => item.field !== "id" && item.field !== "img")
