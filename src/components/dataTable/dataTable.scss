@@ -1,4 +1,11 @@
+@import "../../styles//responsive.scss";
 .dataTable {
+  max-width: 90vw;
+
+  @include xxl {
+    max-width: 75vw;
+  }
+
   .dataGrid {
     background: white;
     padding: 20px;
