@@ -1,12 +1,12 @@
-import Single from "../../components/single/Single"
-import "./user.scss"
+import Single from "../../components/single/Single";
+import { singleUser } from "../../data";
+import "./user.scss";
 const User = () => {
   return (
     <div className="user">
-      
-      <Single/>
+      <Single {...singleUser} />
     </div>
-  )
-}
+  );
+};
 
-export default User
+export default User;
